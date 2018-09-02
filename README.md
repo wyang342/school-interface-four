@@ -2,7 +2,7 @@
 
 ## Release 0: Refactoring / The School Interface Class 
 
-We are going to refactor our ugly runner file by pulling the User Interface logic into a new class. Our new class will be a user interface that can be reused for any instance of school. The `SchoolInterface` class will take a `School` object and handle all the interaction between user and school for us. 
+We are going to refactor our ugly runner file by pulling the user interface logic into a new class. Our new class will be a user interface that can be reused for any instance of school. The `SchoolInterface` class will take a `School` object and handle all the interaction between user and school for us. 
 
 Create a new file in our `classes` directory called `interface.rb`. 
 
@@ -103,7 +103,7 @@ First, we'll need to ask the user for their employee id. Using that id we can lo
 
 Some things to consider. What happens if the user enters an employee id that doesn't exist? Does the program exit? Do we ask them again? Same with the password. Can we limit the number of attempts? 
 
-How you impliment this is up to you. Write psuedo code and break the process down. 
+How you implement this is up to you. Write pseudo code and break the process down into small steps. 
 
 When you are done you should be able to call `authenticate_user` at the top of `run`. 
 
