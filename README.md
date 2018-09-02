@@ -112,6 +112,7 @@ When you are done you should be able to call `authenticate_user` at the top of `
 
 def run 
     authenticate_user
-    # ...methods and logic that run the program. This code will depend on how you chose to refactor. 
+    # Methods and logic that run the program will follow. 
+    #This code should only run if the user is successfully authenticated. 
 end 
 ```
