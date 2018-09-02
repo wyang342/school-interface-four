@@ -97,6 +97,16 @@ What other parts of `run` can be broken out into their own methods? Maybe the la
 
 ## Release 1: Authentication 
 
+```
+Welcome to Ridgemont High
+_________________________
+Please enter a valid employee id:
+11111
+
+Please enter a valid password:
+xx
+```
+
 Right now anyone can run our program and access student records. Let's add a feature that checks if the user is present in our `staff.csv` file and then uses their password to authenticate the user. What are the steps we'll have to take to accomplish this? 
 
 First, we'll need to ask the user for their employee id. Using that id we can look up the user. After that we'll ask the user for their password which we can compare to the password saved on the object. If they match, we continue to run the program as before. 
