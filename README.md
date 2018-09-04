@@ -73,7 +73,7 @@ It's important to note that all we've done is reorganize our code. The program s
 
 Now that we have our interface class, let's see if there is anything in our `run` method that can be further broken down into its own method. 
 
-The first thing we do everytime through our loop is print out a menu. Let's start by pulling that out. 
+The first thing we do every time through our loop is print out a menu. Let's start by pulling that out. 
 
 ```Ruby 
 # interface.rb
@@ -93,7 +93,7 @@ And then we call it in `run`.
             puts '' 
 ```
 
-What other parts of `run` can be broken out into their own methods? Maybe the large chunk of code where we get data to add a new student? 
+What other parts of `run` can be broken out into their own methods? Maybe the large chunk of code where we get data to add a new student? What else? 
 
 ## Release 1: Authentication 
 
@@ -108,8 +108,6 @@ xx
 ```
 
 Right now anyone can run our program and access student records. Let's add a feature that checks if the user is present in our `staff.csv` file and then uses their password to authenticate the user. What are the steps we'll have to take to accomplish this? 
-
-First, we'll need to ask the user for their employee id. Using that id we can look up the user. After that we'll ask the user for their password which we can compare to the password saved on the object. If they match, we continue to run the program as before. 
 
 Some things to consider. What happens if the user enters an employee id that doesn't exist? Does the program exit? Do we ask them again? Same with the password. Can we limit the number of attempts? 
 
